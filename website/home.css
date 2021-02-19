@@ -1,0 +1,103 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+body{    
+    background-color:rgb(29, 87, 105);    
+}
+
+#bgVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+#myBtn{
+    position:fixed;
+    width: 100px;
+    padding: 10px;
+    border:none;
+    background: cadetblue;
+    cursor:pointer;
+    color: white;
+    border-radius: 5px;    
+}
+
+#myBtn:hover{
+    background: #ddd;
+    color: black;
+}
+
+/* i hate this implementation */
+
+.container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(95, 158, 160,.87);
+    align-content: center;
+    margin: 18% 28%;
+    padding: 0% 5%;
+    width: 700px;
+    height: 220px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif;  
+}
+/* .container{
+    position:fixed;
+    display: grid;
+    background-color: rgb(95, 158, 160,.87);
+    align-content: center;
+    margin: 15% 30%;
+    padding: 5% 3%;
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.20);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif;  
+} */
+
+.pic{
+    grid-area: "pic";    
+}
+
+.name{
+    grid-area: "name";
+}
+
+.title{
+    grid-area: "title";
+}
+
+.icon-bar{
+    grid-area: "icon-bar";
+    display:flex;  
+    flex-direction: row;       
+}
+.pad{
+    padding-left:17.5%;
+    font-size: 22px;
+}
+
+a{
+    color: inherit;
+}
+/* #iconBtn{
+    position:fixed;
+    font-size: 40px;
+    margin: 60px;
+    color:burlywood;
+}
+#icon1{
+    position: fixed;
+    margin: 30px 20px;
+    color: burlywood;
+} */
