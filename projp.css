@@ -1,0 +1,167 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+body{    
+    background-color:rgb(29, 87, 105);    
+}
+
+#bgVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+#myBtn{
+    position:relative;
+    width: 100px;
+    padding: 10px;
+    border:none;
+    background: cadetblue;
+    cursor:pointer;
+    color: white;
+    border-radius: 5px;    
+}
+
+#myBtn:hover{
+    background: #ddd;
+    color: black;
+}
+
+.wrapper{
+    align-content: center;
+}
+
+/* no jank*/
+.container{
+    position:relative;
+    background-color: rgba(35, 42, 43, 0.87);/* center trick */
+    margin: 25px auto;
+    padding-top: 1%;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif;  
+}
+
+.pic{
+    grid-area: "pic";    
+}
+
+.name{
+    grid-area: "name";
+}
+
+/* 3 row 2 column */
+.project{
+    display: grid;
+    grid-template-areas: 
+    "P1 P2"
+    "P3 P4"
+    "P5 P6";
+}
+/* AWAY MARGINS */
+.pstyle{
+    transition: all .3s ease-in-out;
+    max-width: 90%;
+    height: 150px;
+    background-color: rgb(153, 78, 35);
+    margin: 5%;
+    border-radius:15px;   
+}
+.pstyle:hover{
+    transform: scale(1.1);
+}
+.project1{
+    grid-area: P1;
+}
+.project2{
+    grid-area: P2;
+}
+.project3{
+    grid-area: P3;
+}
+.project4{
+    grid-area: P4;
+}
+.project5{
+    grid-area: P5;
+}
+.project6{
+    grid-area: P6;
+}
+hr{
+    width: 70%;
+}
+
+.title{
+    grid-area: "title";
+}
+
+.icon-bar{
+    grid-area: "icon-bar";
+    display:flex;  
+    flex-direction: row;       
+}
+.pad{
+    width: 150px;  
+    margin: auto;
+    font-size: 22px;
+}
+
+#playpause{
+    position: fixed;
+    color:burlywood;
+    margin: 50px;
+    font-size: 50px;
+}
+
+a{
+    color: inherit;
+}
+
+
+ @media(max-width: 700px){
+
+     .container{
+        position:relative;
+        background-color: rgba(35, 42, 43, 0.87);
+        /* center trick */
+        margin: 25px auto;
+        padding-top: 1%;
+        width: 60%;
+        height: auto;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+        color:  rgb(253, 233, 217); 
+        font-family: 'Cinzel', serif;
+    } 
+    .pstyle{
+        transition: all .3s ease-in-out;
+        max-width: 90%;
+        height: 75px;
+        background-color: rgb(153, 78, 35);
+        margin: 5%;
+        border-radius:15px;
+       
+    }
+    .project{
+        display: grid;
+        grid-template-areas: 
+        "P1"
+        "P2"
+        "P3"
+        "P4"
+        "P5"
+        "P6";
+    }
+}

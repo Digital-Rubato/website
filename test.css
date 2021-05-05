@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.wrapper{
+    color: blue;
+}
+.container{
+    background-color: rgb(95, 158, 160,.87);
+    /* center trick */
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    height: 220px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif;  
+}

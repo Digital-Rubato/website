@@ -1,0 +1,140 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+body{    
+    background-color:rgb(29, 87, 105);    
+}
+
+#bgVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+#myBtn{
+    position:relative;
+    width: 100px;
+    padding: 10px;
+    border:none;
+    background: cadetblue;
+    cursor:pointer;
+    color: white;
+    border-radius: 5px;    
+}
+
+#myBtn:hover{
+    background: #ddd;
+    color: black;
+}
+/* Icon hover switch */
+/* .icon1:hover span{
+    display:none;
+}
+.icon1:hover:before{
+    content:'About Me';
+    
+}
+.icon2:hover span{
+    display:none;
+}
+.icon2:hover:before{
+    content:'Projects';
+}
+.icon3:hover span{
+    display:none;
+}
+.icon3:hover:before{
+    content:'GitHub';
+}
+.icon4:hover span{
+    display: none;
+    
+}
+.icon4:hover:before{
+    content: "Linked in";
+} */
+
+/* cleaner implementation */
+
+.container{
+    position:relative;
+    background-color: rgb(95, 158, 160,.87);
+    /* center trick */
+    margin: 250px auto;
+    padding-top: 1%;
+    width: 50%;
+    height: 220px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif;  
+}
+
+hr{
+    width: 70%;
+}
+.pic{
+    grid-area: "pic";    
+}
+
+.name{
+    grid-area: "name";
+}
+
+.title{
+    grid-area: "title";
+}
+
+.icon-bar{
+    grid-area: "icon-bar";
+    display:flex;  
+    flex-direction: row;
+           
+}
+.pad{  
+    font-size: 22px;
+    
+    /* All hail width the saviour of moving elements. Hail. had to add width to make sure it had a box. a box to make sure it had space to move in. */
+    width: 150px;  
+    margin: auto;   
+}
+
+#playpause{
+    position: fixed;
+    color:burlywood;
+    margin: 50px;
+    font-size: 50px;
+}
+
+a{
+    color: inherit;
+}
+
+
+
+@media(max-width: 1000px){
+    .container{
+        position: relative;
+        background-color: rgb(95, 158, 160,.87);
+        /* center trick */    
+        margin: 250px auto;
+        padding-top: .5%;
+        width: 90%;
+        height: 220px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+        color:  rgb(253, 233, 217); 
+        font-family: 'Cinzel', serif; 
+    }
+    .pad{
+        font-size: 20px;
+        
+    }
+}
+    
