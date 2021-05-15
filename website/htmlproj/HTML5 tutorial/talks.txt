@@ -1,0 +1,41 @@
+This tutorial was done early on into my coding career. The emphasis of this tutorial was to set up a website that was simple and provided the customer ease of use. This was achieved by adding email submission forms to every page, and an aside to sign up for "more information".
+
+To view the finished site click here.
+
+
+This tutorial was pretty early on my coding career. From Brad Traversy of Traversy Media. 
+
+One little thing. Lorem was made possible because of VS codes lorem generator. An Emmet extension.
+
+This website tutorial was initially posed a company site to sell websites. Something easy that a client can navigate as well as having a place for customers to sign up for quotes. With that, pages are kept clean and easy for navigation. Users have an area for feed back but all pages have an email entry box, for convinient sign up. 
+
+ Section tags was something i was curious about, but, at the time,i thought it only as a specialized div. And it is, simply put. But the nice thing is that sections can be nested within each other and change its rules. What i mean by this, a section within a section(or subsection) will then apply the same font rules but at a smaller size like h1's in subsections will appear as h2's. 
+
+<code>
+
+<section>
+
+<h1>Title</h1>
+
+<section>
+
+<h1>subtitle</h1>
+
+</section>
+
+</section>
+</code>
+
+Asides, like sections, peaked my curiousity. Again, partially because I would rather to do things simply and quickly. I learned that asides could be thought of as divs but simple and quick to implement, and worth the little bit of reading. This element is frequently used as sidebars to hold content for forms or notification boxes. It is a tag that just gels smoothly and easily. So easily in fact, this webpage does not make use of the grid layout. Aside is special in such a way that it will nest itself almost automatically where you position it. Just great. 
+
+Speaking of styling, adding multiple id's, classes, and element tags in CSS made so much sense. When i see stuff like this you can imagine a whole new world opening up. But at the same time I have so many questions on why:
+
+<code> 
+	header .highlight, header .current a{
+	color: orange;
+	font-weight: bold;
+	}
+</code>
+
+But all my questions are more pointed to the developer that made this. Because of this, this syntax is interesting. It reminded me how i wouldnt do this. I would just use just a highlight class, or code it so the HTML takes care of it, or maybe add javascript instead. Code is full of possibilities.
+ 

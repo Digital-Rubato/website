@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudjs.cloudflare.come/ajax/libs/font-awwesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymouse" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code_Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+    <script src="/JS/fontawesome.js" crossorigin="anonymous"></script>
+
+    <title>FCC_Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt=""><i class="fas fa-cat"></i>
+            <!-- return button -->
+            <a href="/projp/fccport.html"><button class="return">Return to Projects</button></a>
+            <!-- hamburger menu-->
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span> 
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">myServices</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">about me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">The Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro"><!-- double hyphen modifier class -->Hello, I am <strong>Collin Kimball</strong></h1>
+        <p class="section__subtitle section__subtitle--intro">self-taught front-end dev</p>
+        <div class="intro__icon section__subtitle--icon">
+
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>            
+            <i class="fab fa-unity"></i>
+            <div class="devicon--fix">
+            <i class="devicon-csharp-plain"></i>
+            </div>
+            
+
+        </div>
+        <img src="images/MHW_palico_red_squared.jpg" alt="cat" class="intro__img">
+        
+    </section>
+
+    <!-- Services -->
+    <section class="my_services" id="services">
+        <h2 class="section__title section__title--services"> What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Programmer</h3>
+                    <p>
+                        After suggestions of friends, I fell into programming. Starting with C# in Unity, and directly after, falling in love with programming. This career is a path plan to pursue for years to come.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>Active Learner</h3>
+                    <p>I am constantly watching videos and reading articles and other materials related to programming. I always want to learn, constantly improving, and looking forward to the next thing. </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3>Attention to detail</h3>
+                    <p>
+                        I worked as a major motion picture compositor and repair man for many years before finding a fit with programming. Those years have taught me that every piece serves a greater picture and that even the tiniest problem can topple a great project. I always bring a laser focused attention to detail to any project, whether it be one line or 1000 lines of code.
+                    </p>
+                </div> <!-- / service -->
+
+            </div><!-- / services-->
+            <a href="#work" class="btn">How I do it</a>
+    </section>
+
+<!-- about me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p>Former compositor and Technician. I have color corrected, rotoscoped, repaired circuits, always putting a professional foot foward. Always looking to make any project excellent and clean, with ideas and details from outside the box. </p>
+
+            <p>Programming was suggested to me constantly, I would script with Python in compositing programs(Nuke, After Effects) but didn't think anything of it. Until 2 years ago where i finally took the plunge and learned C# in Unity. To which I found that I loved all aspects of a project, from completion or a period that breaks the whole thing. I always view it as solving a puzzle and there are always new puzzles to solve.</p>
+        </div>
+
+        <img src="images/MHW_palico_white.jpg" alt="cat" class="about-me__img">
+
+    </section>
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title--work">My work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <a href="portfolio-item.html#exampleTest" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="proj" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="proj" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="proj" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="proj" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/270488/pexels-photo-270488.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="code" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="proj" class="portfolio__img">
+            </a>            
+        </div>
+        <div class="bottom-btn">
+        <a href="portfolio-item.html" class="btn">And More...</a>
+    </div>
+    </section>
+
+    <!-- foooter-->
+
+    <footer class="footer">
+        <a href="mailto:collinkimball720@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> Email me here.</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://codepen.io">
+                    <i class="fab fa-codepen">
+
+                    </i></a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Digital-Rubato">
+                    <i class="fab fa-github"></i>
+
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.freecodecamp.org/digital_rubato">
+                    <i class="fab fa-free-code-camp"></i>
+
+                </a></li>
+        </ul>
+    </footer>
+    <script src="file.js"></script>
+</body>
+</html>

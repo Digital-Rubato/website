@@ -1,0 +1,114 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+body{    
+    background-color:rgb(29, 87, 105);  
+    /* background-image:url(images/IMG_5749.jpg);
+    background-repeat: no-repeat;  */
+}
+/* button id current: scrapped
+
+#orange{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 20px;
+    border:none;
+    background:rgba(153, 78, 35);
+}
+#blue{
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 20px;
+    border:none;
+    background:rgb(29, 87, 105);
+} */
+
+.img-div img{
+    margin: 0 auto;
+    width:95%;
+    height:auto;
+    padding: 0;
+    border: 5px solid rgb(253, 233, 217);
+}
+
+.container{
+    position:relative;
+    background-color: rgba(35, 42, 43, 0.87);
+    /* center trick */
+    margin: 50px auto;
+    padding-top: 1%;
+    padding-left: 50px;
+    padding-right: 50px;    
+    width: 45%;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+    color:  rgb(253, 233, 217); 
+    font-family: 'Cinzel', serif; 
+}
+
+.pic{
+    grid-area: "pic";    
+}
+
+.name{
+    grid-area: "name";
+}
+
+
+.title{
+    grid-area: "title";
+}
+
+.icon-bar{
+    grid-area: "icon-bar";
+    display:flex;  
+    flex-direction: row;       
+}
+.pad{
+    width: 150px;  
+    margin: auto;
+    font-size: 22px;
+}
+
+#playpause{
+    position: fixed;
+    color:burlywood;
+    margin: 50px;
+    font-size: 50px;
+}
+hr{
+    width: 70%;
+}
+
+a{
+    color: inherit;
+}
+
+@media(max-width: 700px){
+    .container{
+        position:relative;
+        background-color: rgba(35, 42, 43, 0.87);
+        /* center trick */
+        margin: 50px auto;
+        padding-top: 1%;
+        width: 70%;
+        height: auto;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 21px -4px rgba(0,0,0,.40);
+        color:  rgb(253, 233, 217); 
+        font-family: 'Cinzel', serif; 
+    }
+    .img-div img{
+        margin: 0 auto;
+        width:95%;
+        height:auto;
+        padding: 0;
+        border: 5px solid rgb(253, 233, 217);
+    }
+    
+}

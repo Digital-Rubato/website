@@ -11,54 +11,38 @@
 </head>
 <body>
     <video autoplay muted loop id="bgVideo">
-        <source src="bgVideo.mp4" type="video/mp4">
+        <source src="vid/bgVideo.mp4" type="video/mp4">
     </video>
-    <div class="wrapper">
-    <div class="container">
+    <!-- pause / play video button -->
+    <button id="myBtn" onclick="myFunction()">Pause Video!</button>
+    <div class="wrapper">        
+    <div class="container">        
         <div class="pic"></div>
         <div class="name"> <h1>Collin Kimball</h1><hr></div>
         <div class="title"><h2>Self Taught Programmer
         </h2></div>
-        <div class="icon-bar">
-            <div class="icon1 pad"><a href="https://github.com/Digital-Rubato"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="icon2 pad"><a href="https://www.linkedin.com/in/collin-kimball-8452151b1/"><i class="fab fa-linkedin"></i></a></div>
-            <div class="icon3 pad"><i class="fas fa-info-circle"></i></div>
-            <div class="icon4 pad"><i class="fas fa-blog"></i></div>
-        </div>
-        <!-- discord functionality? -->
-    </div>
 
-    <button id="myBtn" onclick="myFunction()">Pause!</button>
-    <!-- <i id="iconBtn"onclick="myFunction()"class="fas fa-pause-circle"></i> -->
+        <div class="icon-bar">
+            <!-- home page icon -->
+            <div class="icon1 pad"><a href="about.html"><i class="fas fa-info-circle"></i></a></div>
+
+            <!-- project icon -->
+            <div class="icon2 pad"><a href="projp.html"><i class="fas fa-tasks"></i></a></div>
+
+            <!-- git hub icon -->
+            <div class="icon3 pad"><a href="https://github.com/Digital-Rubato"><i class="fab fa-github"></i></a>
+            </div>
+
+            <!-- linked in icon -->
+            <div class="icon4 pad"><a href="https://www.linkedin.com/in/collin-kimball-8452151b1/"><i class="fab fa-linkedin"></i></a></div>
+                <br> <br>
+             <!--icon div end  -->
+        </div>
+        <!-- container div end-->
+    </div>
+    <!-- wrapper div end -->
     </div>
     
 </body>
-<script src="https://kit.fontawesome.com/2d2be9352f.js" crossorigin="anonymous"></script>
-<script>
-    var video = document.getElementById("bgVideo");
-
-    var btn = document.getElementById("myBtn");
-
-    function myFunction(){
-        if (video.paused){
-            video.play();
-             btn.innerHTML = "Pause!";
-        }else{
-            video.pause();
-            btn.innerHTML = "Play!";
-        }
-    }
-</script>
-<!-- <script>
-// function change (iconID){
-//     if(document.getElementById(iconID).className=="fas fa-play-circle"){
-//       document.getElementById(iconID).className = "fas fa-pause-circle";
-//     }else{
-//       document.getElementById(iconID).className = "fas fa-play-circle";
-//     }
-//   }
-</script> -->
-  <!-- <i id="icon1" onclick="change('icon1')" class="fa fa-chevron-up" aria hidden="true"> -->
- </html>
-<!--<i class="fas fa-play-circle"></i> -->
+<script src="JS/fontawesome.js" crossorigin="anonymous"></script>
+<script src="JS/videobut.js"></script>
