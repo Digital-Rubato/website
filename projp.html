@@ -12,11 +12,13 @@
 <body>
     <!-- video  -->
     <video autoplay muted loop id="bgVideo">
-        <source src="bgProgramming.mp4" type="video/mp4">
-        
+        <source src="vid/bgProgramming.mp4" type="video/mp4">        
     </video>
+
     <!-- pause / play video button -->
     <button id="myBtn" onclick="myFunction()">Pause Video!</button>
+
+    <!-- Project Area -->
     <div class="wrapper">
     <div class="container">
         <div class="pic"></div>
@@ -24,24 +26,29 @@
         <div class="title"><h2>Projects
         </h2></div>
         <!-- project cards -->
-        <div class="project">
-            <div class="project1 pstyle">P1</div>
-            <div class="project2 pstyle">P2</div>
-            <div class="project3 pstyle">P3</div>
-            <div class="project4 pstyle">P4</div>
-            <div class="project5 pstyle">P5</div>
-            <div class="project6 pstyle">P6</div>
+        <div class="project">            
+            <a href="projp/jsmovieapp.html"><div class="project1 pstyle"><p>JavaScript Movie Listing App</p></div></a>
+
+            <a href="projp/phpmySQLilogin.html"><div class="project2 pstyle"><p>PHP MySQLi Login/SignUp Site</p></div></a>
+
+            <a href="projp/fccport.html"><div class="project3 pstyle"><p>FCC Portfolio Site</p></div></a>
+
+            <a href="projp/cubeslide.html"><div class="project4 pstyle"><p>3d Unity Game</p></div></a>
+
+            <a href="projp/simplesite.html"><div class="project5 pstyle"><p>Basic Consumer Website</p></div></a>
+
+            <a href="projp/2dgame.html"><div class="project6 pstyle"><p>2d Unity Game</p></div></a>
             
             </div>
-            <hr>  
-                    
+            <!-- end project div -->
+            <hr>                    
             
             <!-- icon bar -->
         <div class="icon-bar">
             <br>
             
             <!-- home page icon -->
-            <div class="icon1 pad"><a href="home.html"><i class="fas fa-home"></i></a></div>
+            <div class="icon1 pad"><a href="index.html"><i class="fas fa-home"></i></a></div>
 
             <!-- about me icon -->
             <div class="icon2 pad"><a href="about.html"><i class="fas fa-info-circle"></i></a></div>
@@ -63,24 +70,12 @@
     
     </div>
     <!-- wrapper div end -->
+    <!-- end project area -->
     
 </body>
 
 <!-- font awesome icon script. -->
-<script src="https://kit.fontawesome.com/2d2be9352f.js" crossorigin="anonymous"></script>
+<script src="JS/fontawesome.js" crossorigin="anonymous"></script>
+
 <!-- video pause/play script -->
-<script>
-    var video = document.getElementById("bgVideo");
-
-    var btn = document.getElementById("myBtn");
-
-    function myFunction(){
-        if (video.paused){
-            video.play();
-             btn.innerHTML = "Pause Video!";
-        }else{
-            video.pause();
-            btn.innerHTML = "Play Video!";
-        }
-    }
-</script>
+<script src="JS/videobut.js"></script>

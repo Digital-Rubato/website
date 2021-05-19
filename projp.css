@@ -73,30 +73,60 @@ body{
     transition: all .3s ease-in-out;
     max-width: 90%;
     height: 150px;
-    background-color: rgb(153, 78, 35);
     margin: 5%;
-    border-radius:15px;   
+    background-color: rgba(153, 78, 35);
+    border-radius:15px;
+    position: relative;   
 }
+div.pstyle p{
+    margin: 0;
+    /* text centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* end center */
+    
+}
+
 .pstyle:hover{
     transform: scale(1.1);
+    opacity: .7;
 }
 .project1{
     grid-area: P1;
+    
+    background-image: url(images/movielistapp.PNG);
+    background-position:center;
+    
 }
 .project2{
     grid-area: P2;
+    background-image: url(images/phpmySQLiapp.PNG);
+    background-position: center;
+    color:rgba(35, 42, 43, 0.87);
+
 }
 .project3{
     grid-area: P3;
+    background-image: url(images/FCC_Portfolio.png);
+    background-position: center;
 }
 .project4{
     grid-area: P4;
+    background-image: url(images/cubeslidegame.png);
+    background-position: center;
+    color:rgb(35, 42, 43);
 }
 .project5{
     grid-area: P5;
+    background-image: url(images/websitetutorial.PNG);
+    background-position: center;
 }
 .project6{
     grid-area: P6;
+    background-image: url(images/2dgame.PNG);
+    background-position: center;
 }
 hr{
     width: 70%;
@@ -135,8 +165,7 @@ a{
         position:relative;
         background-color: rgba(35, 42, 43, 0.87);
         /* center trick */
-        margin: 25px auto;
-        padding-top: 1%;
+        margin: 25px auto;        
         width: 60%;
         height: auto;
         text-align: center;
